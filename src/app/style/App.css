@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700&display=swap');
+
+:root {
+    --primary-color-old: #0f172a;
+    --secondary-color-old: #22b3d9;
+    --primary-color: #201932;
+    --secondary-color: #ea37a3;
+    --secondary-color-footer: #F075C0;
+    --tertiary-color: #2bbef2;
+    --quaternary-color: #5540b0;
+    --success: #539e43;
+}
+
+html{
+    overflow: scroll;
+    scrollbar-width: none; /* Firefox */
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    display: none; /* Chrome, Safari y otros WebKit */
+}
+
+
+body{
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    background-color: rgb(35, 35, 39);
+    color: white;
+}
+
+/* main{
+    scroll-behavior: smooth;
+} */
