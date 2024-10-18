@@ -1,8 +1,121 @@
 
 
-#contact{
+.contact{
+    position: relative;
     min-height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
+    background-image: url('./assets/background-contact.jpg');
+    background-color: #211c20;
+    background-position-x: 65%;
+    background-position-y: top;
+    background-repeat: no-repeat;
+    background-size: auto 80%;
+}
+
+.contact__form{
+    margin-left: 5vw;
+    width: 75%;
+    max-width: 400px;
+    z-index: 1;
+}
+
+.contact__form input,
+.contact__form textarea{
+    width: 100%;
+    padding: 8px 16px;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+    background-color: transparent;
+    color: white;
+    outline: none;
+    border: 2px solid white;
+}
+
+.contact__form input:focus,
+.contact__form textarea:focus{
+    background-color: white;
+    color: black;
+}
+
+.contact__form button{
+    width: 100%;
+    margin: 8px 0px;
+    padding: 8px 16px;
+    cursor: pointer;
+    background-color: var(--success);
+    border: 2px solid var(--success);
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.contact__form button:hover{
+    background-color: white;   
+    color: var(--success);
+}
+
+.warning{
+    margin: 8px 0px;
+    border: 2px solid #FBC02D;
+    display: flow-root;
+    border-radius: 8px;
+}
+
+.warning p{
+    margin: 8px 16px;
+}
+
+.form-error{
+    margin: 8px 0px;
+    border: 2px solid #C62828;
+    background-color: #FFCDD2;
+    color: #C62828;
+    display: flow-root;
+    border-radius: 8px;
+}
+
+.form-error p{
+    margin: 8px 16px;
+    text-align: center;
+}
+
+.form-success{
+    margin: 8px 0px;
+    border: 2px solid #2E7D32;
+    background-color: #C8E6C9;
+    color: #2E7D32;
+    display: flow-root;
+    border-radius: 8px;
+}
+
+.form-success p{
+    margin: 8px 16px;
+    text-align: center;
+}
+
+.developer-shadow{
+    height: 40%;
+    position: absolute;
+    right: 5vw;
+    bottom: 0;
+}
+
+@media (width > 450px){
+
+    .contact{
+        background-size: cover;
+        background-position-x: 60%;
+    }
+
+}
+
+@media (width > 800px){
+
+    .contact{
+        background-position-x: 40%;
+    }
+
 }

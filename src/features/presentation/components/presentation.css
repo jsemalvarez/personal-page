@@ -64,7 +64,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding-right: calc(13vh);
+    padding-right: 13vh;
     box-sizing: border-box;
 }
 
@@ -219,7 +219,7 @@
     }
 
     .presentation__side-content .wrapper__nickname{
-        padding-right: calc(16vh);
+        padding-right: 16vh;
         background-color: transparent;
     }
 
@@ -253,7 +253,7 @@
     }
 
     .presentation__side-content .wrapper__nickname{
-        padding-right: calc(26vh);
+        padding-right: 26vh;
     }
 
 

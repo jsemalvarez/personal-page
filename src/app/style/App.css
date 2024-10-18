@@ -28,3 +28,12 @@ body{
     background-color: rgb(35, 35, 39);
     color: white;
 }
+
+.errorText{
+    color: red !important;
+}
+
+.errorInput{
+    border: 2px solid red !important;
+}
+
