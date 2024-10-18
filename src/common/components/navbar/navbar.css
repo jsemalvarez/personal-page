@@ -12,6 +12,10 @@
     color: var(--success);
 }
 
+.navbar img{
+    width: 60px;
+}
+
 .navbar ul{
     display: flex;
     justify-content: space-evenly;

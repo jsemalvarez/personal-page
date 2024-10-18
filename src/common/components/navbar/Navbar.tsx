@@ -2,6 +2,7 @@ import { ContactIcon } from '../icons/ContactIcon'
 import { JobIcon } from '../icons/JobIcon'
 import { ProjectIcon } from '../icons/ProjectIcon'
 import { StudyIcon } from '../icons/StudyIcon'
+import nodeIcon from '../../../assets/Node.js.svg';
 import './navbar.css'
 
 export const Navbar = () => {
@@ -31,7 +32,7 @@ export const Navbar = () => {
 
     return (
         <nav className="navbar">
-            <h2>JSM</h2>
+            <a href='#presentation'><img src={nodeIcon} alt="Node Icon" /></a>            
             <ul>
                 {
                     navItems.map( item => (
