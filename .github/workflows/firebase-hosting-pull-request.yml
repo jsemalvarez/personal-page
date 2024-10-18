@@ -13,7 +13,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Instal Dependencies
-        uses: npm install
+        run: npm install
       - name: Build
         run: npm run build
       - name: Deploy to Firebase
