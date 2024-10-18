@@ -62,6 +62,7 @@ export const Contact = () => {
   }
 
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    console.log('holaaaaa')
     e.preventDefault()
 
     const newErrors: { [key: string]: string } = {};
@@ -170,7 +171,7 @@ export const Contact = () => {
 
           <button 
             type='submit'
-            disabled= { !formState.isSending }
+            disabled= { formState.isSending }
           >Enviar</button>
 
           <div className='warning'>

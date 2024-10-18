@@ -57,6 +57,12 @@
     color: var(--success);
 }
 
+.contact__form button:disabled{
+    background-color: #66BB6A;
+    color: #C8E6C9;
+    cursor: not-allowed;
+}
+
 .warning{
     margin: 8px 0px;
     border: 2px solid #FBC02D;
