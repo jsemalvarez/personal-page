@@ -85,16 +85,17 @@ export const Contact = () => {
       setError(newErrors);
       return;
     }
-    
+
     setFormState(state => ({
       ...state,
       isSending: true
     }))
+    
+    setError({});
 
     const response = await sendEmail();
 
     if(response.ok){
-      setError({});
       onResetForm();
       setFormState(state => ({
         ...state,
@@ -172,7 +173,9 @@ export const Contact = () => {
           <button 
             type='submit'
             disabled= { formState.isSending }
-          >Enviar</button>
+          >
+            { (formState.isSending)? 'Enviando...' : 'Enviar'}
+          </button>
 
           <div className='warning'>
             <p> ! Los campos con * son obligatorios </p>
