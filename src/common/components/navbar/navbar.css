@@ -5,11 +5,9 @@
     display: flex;
     align-items: center;
     width: 100%;
-    padding: 0 0 0 12px;
-}
-
-.navbar h2{
-    color: var(--success);
+    padding: 4px 0 4px 12px;
+    background-color: var(--primary-color);
+    z-index: 1;
 }
 
 .navbar img{
