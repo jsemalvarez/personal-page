@@ -137,6 +137,7 @@ export const Contact = () => {
             name="name" 
             value={ name }
             onChange={ onInputChange }
+            disabled= { !formState.isSending }
           />
 
           <label
@@ -150,6 +151,7 @@ export const Contact = () => {
             name="email" 
             value={ email }
             onChange={ onInputChange }
+            disabled= { formState.isSending }
           />
 
           <label>Asunto:</label>
@@ -158,6 +160,7 @@ export const Contact = () => {
             name="subjet" 
             value={ subjet }
             onChange={ onInputChange }
+            disabled= { formState.isSending }
           />
 
           <label
@@ -171,6 +174,7 @@ export const Contact = () => {
             value={message}
             onChange={onInputChange}
             placeholder="Escriba su mensaje aqui . . ."
+            disabled= { formState.isSending }
           >
           </textarea>
 

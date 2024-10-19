@@ -38,6 +38,14 @@
     color: black;
 }
 
+.contact__form input:disabled,
+.contact__form textarea:disabled{
+    background-color: #546E7A;
+    color: #78909C;
+    cursor: not-allowed;
+}
+
+
 .contact__form button{
     width: 100%;
     margin: 8px 0px;
