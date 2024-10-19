@@ -35,18 +35,22 @@ export const Contact = () => {
   const sendEmail = async () => {
 
     try {
-      const response = await fetch('https://formsubmit.co/jsemalvarez@gmail.com', {
+      const response = await fetch('https://formsubmit.co/ajax/jsemalvarez@gmail.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'Accept': 'application/json'
         },
-        body: JSON.stringify({name, email, subjet, message}), // Convertimos los datos del formulario a JSON
+        body: JSON.stringify({
+          name, 
+          email, 
+          subjet, 
+          message
+        }),
       });
 
       if (!response.ok) {
-        // TODO: quitar este console.log(response)
-        console.log(response)
-        throw new Error('Uuuppss!!');
+        throw response;
       }
 
       return {
