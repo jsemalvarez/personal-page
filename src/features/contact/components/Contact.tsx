@@ -35,7 +35,7 @@ export const Contact = () => {
   const sendEmail = async () => {
 
     try {
-      const response = await fetch('https://formsubmit.co/tu-email-aqui', {
+      const response = await fetch('https://formsubmit.co/jsemalvarez@gmail.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
