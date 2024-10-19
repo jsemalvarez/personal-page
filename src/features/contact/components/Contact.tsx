@@ -137,7 +137,7 @@ export const Contact = () => {
             name="name" 
             value={ name }
             onChange={ onInputChange }
-            disabled= { !formState.isSending }
+            disabled= { formState.isSending }
           />
 
           <label
@@ -186,7 +186,7 @@ export const Contact = () => {
           </button>
 
           <div className='warning'>
-            <p> ! Los campos con * son obligatorios </p>
+            <p>Los campos con * son obligatorios</p>
           </div>
 
           {

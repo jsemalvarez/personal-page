@@ -73,7 +73,7 @@
 
 .warning{
     margin: 8px 0px;
-    border: 2px solid #FBC02D;
+    border: 1px solid #FBC02D;
     display: flow-root;
     border-radius: 8px;
 }
