@@ -5,7 +5,7 @@
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background-image: url('./assets/background-contact.jpg');
+    background-image: url('/assets/background-contact.jpg');
     background-color: #211c20;
     background-position-x: 65%;
     background-position-y: top;
