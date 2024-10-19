@@ -105,7 +105,7 @@
 .developer-shadow{
     height: 40%;
     position: absolute;
-    right: 5vw;
+    right: 1vw;
     bottom: 0;
 }
 
@@ -114,6 +114,9 @@
     .contact{
         background-size: cover;
         background-position-x: 60%;
+    }
+    .developer-shadow{
+        right: 5vw;
     }
 
 }
