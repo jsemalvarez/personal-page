@@ -35,7 +35,7 @@ export const Contact = () => {
   const sendEmail = async () => {
 
     try {
-      const response = await fetch('https://formsubmit.co/ajax/jsemalvarez@gmail.com', {
+      const response = await fetch('https://formsubmit.co/ajax/832fc4a3563a03323950592acfeaf711', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -66,7 +66,7 @@ export const Contact = () => {
   }
 
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    console.log('holaaaaa')
+
     e.preventDefault()
 
     const newErrors: { [key: string]: string } = {};
