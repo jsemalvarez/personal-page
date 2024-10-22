@@ -2,7 +2,7 @@
 
 .projects{
     min-height: 100vh;
-    padding: 40px 12px 80px 12px;
+    padding: 60px 12px;
     background-color: var(--primary-color);
 }
 
