@@ -5,7 +5,7 @@ import './projects.css';
 export const Projects = () => {
   return (
     <section id='projects' className='projects'>
-        <h2 className='projects__title'>Projectos</h2>
+        <h2 className='projects__title'>Proyectos</h2>
 
       <div className='grid-cards-project'>
       
