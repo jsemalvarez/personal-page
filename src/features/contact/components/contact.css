@@ -3,18 +3,21 @@
 .contact{
     position: relative;
     min-height: 100vh;
+    padding: 60px 12px;
     display: flex;
+    justify-content: center;
     align-items: center;
     background-image: url('/assets/background-contact.jpg');
     background-color: #211c20;
-    background-position-x: 65%;
-    background-position-y: top;
+    background-position-x: 70%;
+    background-position-y: -30%;
     background-repeat: no-repeat;
     background-size: auto 80%;
+    overflow: hidden;
 }
 
 .contact__form{
-    margin-left: 5vw;
+    /* margin-left: 5vw; */
     width: 75%;
     max-width: 400px;
     z-index: 1;
@@ -113,18 +116,21 @@
 .developer-shadow{
     height: 40%;
     position: absolute;
-    right: 1vw;
-    bottom: 0;
+    right: -40px;
+    bottom: -100px;
 }
 
 @media (width > 450px){
 
     .contact{
+        justify-content: flex-start;
         background-size: cover;
         background-position-x: 60%;
     }
     .developer-shadow{
         right: 5vw;
+        right: 0;
+        bottom: 0;
     }
 
 }
