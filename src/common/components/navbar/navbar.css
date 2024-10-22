@@ -5,9 +5,10 @@
     display: flex;
     align-items: center;
     width: 100%;
-    padding: 4px 0 4px 12px;
+    padding: 4px 12px;
     background-color: var(--primary-color);
     z-index: 1;
+    box-sizing: border-box;
 }
 
 .navbar img{
@@ -15,12 +16,13 @@
 }
 
 .navbar ul{
+    flex-grow: 1;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-end;
+    gap: 12px;
     list-style: none;
     padding: 0;
-    width: 100%;
-    max-width: 650px;
+    /* max-width: 650px; */
 }
 
 .navbar ul li a{
@@ -49,6 +51,14 @@
 }
 
 @media (width > 800px) {
+
+    .navbar{
+        padding: 4px 20px;
+    }
+
+    .navbar ul{
+        gap: 20px;
+    }
 
     .navbar ul li a span{
         display: inline;

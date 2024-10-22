@@ -1,7 +1,7 @@
 import { ContactIcon } from '../icons/ContactIcon'
 import { JobIcon } from '../icons/JobIcon'
 import { ProjectIcon } from '../icons/ProjectIcon'
-import { StudyIcon } from '../icons/StudyIcon'
+// import { StudyIcon } from '../icons/StudyIcon'
 import nodeIcon from '../../../assets/Node.js.svg';
 import './navbar.css'
 
@@ -18,11 +18,11 @@ export const Navbar = () => {
             path:'#projects',
             icon: <ProjectIcon />
         },
-        {
-            name:'estudios',
-            path:'#studies',
-            icon: <StudyIcon />
-        },
+        // {
+        //     name:'estudios',
+        //     path:'#studies',
+        //     icon: <StudyIcon />
+        // },
         {
             name:'contacto',
             path:'#contact',
