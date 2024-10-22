@@ -1,8 +1,170 @@
 
 
-#projects{
+.projects{
     min-height: 100vh;
+    padding: 40px 12px 80px 12px;
+    background-color: var(--primary-color);
+}
+
+.projects__title{
+    color: var(--secondary-color);
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.grid-cards-project{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    gap: 20px;
+}
+
+.card-project{
+    width: 90%;
+    max-width: 400px;
+    background-color: var(--primary-color-old);
+    box-sizing: border-box;
+    border: 1px solid white;
+    padding: 16px;
+    overflow: hidden;
+}
+
+.img-project{
+    /* width: 100%; */
+    height: 40%;
+    background-color: white;
+    border-radius: 4px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.img-project__header{
+    padding: 2px;
+    display: flex;
+    gap: 2px;
+}
+
+.img-project__header div:first-child{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #ff5d5b;
+}
+
+.img-project__header div:nth-child(2){
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #ffaa29;
+}
+
+.img-project__header div:last-child{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #27cc34;
+}
+
+.img-project__content{
+    height: 150px;
+    background-color: gray;
+    flex-grow: 1;
+    background-size: cover;
+    background-position: center;
+}
+
+.img-project__content--pcp{
+    background-image: url('/assets/project-pcp.jpeg');
+}
+
+.img-project__content--pokemon-chat{
+    background-image: url('/assets/pokemon-chat.png');
+}
+
+.img-project__content--descubri-mdp{
+    background-image: url('/assets/descubri-mdp.jpg');
+}
+
+.img-project__content--gestion-atlantis{
+    background-image: url('/assets/gestion-atlantis.jpeg');
+}
+
+.img-project__content--hackaton-mdp-data-fest{
+    background-image: url('/assets/hackaton-mdp-data-fest.webp');
+}
+
+.img-project__content--hackaton-apptacc{
+    background-image: url('/assets/apptacc.jpg');
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-color: #d17101;
+}
+
+
+.nav-project{
+    color: var(--secondary-color);
+}
+
+.nav-project h3{
+    margin: 4px 0 0 0;
+}
+.nav-project p{
+    margin: 0;
+}
+
+/* .nav-project__left-items{
+    margin-bottom: 4px;
+} */
+
+.nav-project__right-items{
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.nav-project__right-items a{
+    color: var(--seconday-color);
+    transition-duration: 0.5s;
+}
+
+.nav-project__right-items a:hover{
+    color: white;
+    transition-duration: 0.5s;
+}
+
+.prject__description{
+    height: 180px;
+    overflow-y: scroll;
+    box-sizing: border-box;
+    scrollbar-width: none; /* Firefox */
+}
+
+.prject__description::-webkit-scrollbar{
+    display: none; /* Chrome, Safari y otros WebKit */
+}
+
+
+
+@media (width > 800px ){
+    .projects{
+        padding-bottom: 100px;
+    }
+
+    .projects__title{
+        font-size: 36px;
+        padding-bottom: 32px;
+    }
+    .grid-cards-project{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+}
+
+@media (width > 1200px ){
+    .grid-cards-project{
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
